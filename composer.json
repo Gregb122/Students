@@ -1,0 +1,23 @@
+{
+  "name": "gregb12/students",
+  "description": "Students application helper",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Grzegorz Bielecki",
+      "email": "grzegorz.bielecki9@gmail.com"
+    }
+  ],
+
+  "require": {
+    "php": "^7.3"
+  },
+
+  "autoload": {
+    "psr-4": { "Gregb12\\Students\\App\\": "app/" }
+  },
+  "autoload-dev": {
+    "psr-4": { "Gregb12\\Students\\Tests\\": "tests/" }
+  }
+}
