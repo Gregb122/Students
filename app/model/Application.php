@@ -18,12 +18,17 @@ class Application
      */
     private $submissionDate;
 
-    // Konstruktor...
-
     /**
      * @var int
      */
     private $points;
+
+    public function __construct(Student $student, DateTimeImmutable $dateTime, int $points)
+    {
+        $this->student = $student;
+        $this->submissionDate = $dateTime;
+        $this->points = $points;
+    }
 
     public function getStudent(): Student
     {

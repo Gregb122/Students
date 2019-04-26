@@ -16,7 +16,11 @@ class Student
      */
     private $lastName;
 
-    // Konstruktor...
+    public function __construct(string $firstName, string $lastName)
+    {
+        $this->firstName = $firstName;
+        $this->lastName = $lastName;
+    }
 
     public function getFirstName(): string
     {

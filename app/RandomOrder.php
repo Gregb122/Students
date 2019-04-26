@@ -9,6 +9,6 @@ class RandomOrder implements IOrderStrategy
 
     function OrderStudents(array $studentsList): array
     {
-        // TODO: Implement OrderStudents() method.
+        return shuffle($studentsList);
     }
 }
